@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vowel Count</title>
+</head>
+<body>
+    <script>
+    
+ // Write code to return the the number of vowels in `str`
+    var str ="I am abir yusuf A E ";
+//Need to count from 0
+    var result =0;
+//Need to containe in variable
+    var vowels = ["a", "e", "i", "o", "u"];
+
+
+var countVowels = function(){
+    //Iterate 
+    for(var i =0; i<str.length; i++){
+        // To use lowerase() method
+        var letter = str[i].toLowerCase();
+        if(vowels.indexOf(letter)!==-1){
+            result = result +1;
+        }
+    }
+    return result;
+
+};
+console.log(countVowels(str));
+
+
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Swap</title>
+</head>
+<body>
+    <script>
+        // Write code to create a function takes a string and returns the string with all of the letter cases swapped
+        var str = "The Price of Greatness Is Responsibility";
+
+        var swapCase = function(str1){
+            var result = "";
+        for(var i = 0; i<str1.lenght; i++){
+            var letter = str1[i];
+
+            if(letter ===letter.toUpperCase()){
+                result += letter.toLowerCase();
+            }
+            else{
+                result += letter.toUpperCase();
+            }
+
+        }
+        return result;
+    };
+    console.log(swapCase(str));
+    </script>
+</body>
+</html>

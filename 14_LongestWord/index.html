@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LongestWord</title>
+</head>
+<body>
+    <script>
+/* Write code to create a function that accepts a string (`str`) 
+   and returns the longest word in the string*/
+     var sms = "I am abir yusuf, come from Bangladesh";
+     
+     var longestWord = function(str){
+         //need seperate each word
+         //str.split();
+         var words = str.split(" ");
+         //convert object to array 
+         var longestWord = words[0];
+
+         //iterate
+         for(var i = 1; i<words.length; i++){
+             var current = words[i];
+
+             if(current.length > longestWord.length){
+                 longestWord = current
+             }
+         }
+         return longestWord;
+
+     }
+     console.log(longestWord(sms))
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>palindrome</title>
+</head>
+<body>
+    <script>
+    // Write code that returns true if `str` is a palindrome,
+    //  and false if `str` is not a palindrome
+
+    //what is palindrome: if you reverse a string, it will be same, for example: mim
+    var str = "mim";
+    var str2 = "abir";
+    var reveraString;
+    var isPalindrome = function(str1){
+
+       reveraString = str1
+        .split(" ")
+        .reverse()
+        .join("");
+
+        if(reveraString === str1){
+            return true;
+        }else{
+            return false;
+        }
+
+    };
+    console.log(isPalindrome(str));
+/*The split() method is used to split a string into 
+ an array of substrings, and returns the new array.*/
+    var ar = "how are you";
+    var x = ar.split(" ", -1);
+    console.log(x)
+    </script>
+</body>
+</html>

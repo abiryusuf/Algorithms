@@ -1,4 +1,4 @@
-// chai has a lot of stuff, let's make assert global
+// chai has a lot of stuff, let's make assert global,
 var expect = chai.expect;
 
 describe("add", function(){
