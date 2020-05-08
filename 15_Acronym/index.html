@@ -10,11 +10,33 @@
     <script>
     /*acronym: a word made up from the first letters of the name of something such as an organization.
      For example, NATO is an acronym for the North Atlantic Treaty Organization.*/
+   
    // Write code to create a function that accepts a string and returns an acronym for the given string
 
    var str = "web developer in nyc"
 
-   
+ var acronym = function(ac) {
+//split the each word
+     var word = ac.split(" ");
+//empty string where for_loop throw the value
+     var result = "";
+       
+//Iterate
+     for(var i = 0; i<word.length; i++){
+           var char = word[i];
+      //convert to upper case
+            result += char[0].toUpperCase();
+            result += char[1].toUpperCase();
+     }        
+       
+// return empty string
+return result;
+       
+}
+
+   console.log(acronym(str));
+
+
 
 
 </script>

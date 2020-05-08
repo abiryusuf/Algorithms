@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ReversWords</title>
+</head>
+<body>
+    <script>
+    // Write code to create a function that accepts a string (`str`) and reverses the order of the words in the string
+    var str = "I am in lockdown";
+
+    var reverseWord = function(re){
+        var word = re.split(" ");
+        var letter = word.reverse();
+        return letter.join(" ");
+    }
+    console.log(reverseWord(str));
+
+     //2nd
+ // Write code to return a new string with all of the characters in `str` reversed.
+// You may NOT use the built-in reverse method
+   var str1 = "abir yusuf";
+   
+   var reverseCharacter = function(re){
+       var result = "";
+       for(var i = re.length-1; i>=0; i--){
+           var letter = re[i];
+           result += letter;
+          
+       }
+       return result;
+   };
+   console.log(reverseCharacter(str1));
+
+    
+    </script>
+</body>
+</html>
