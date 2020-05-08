@@ -11,26 +11,20 @@
 /* Write code to create a function that accepts a string (`str`) 
    and returns the longest word in the string*/
      var sms = "I am abir yusuf, come from Bangladesh";
-     
+
      var longestWord = function(str){
-         //need seperate each word
-         //str.split();
-         var words = str.split(" ");
-         //convert object to array 
-         var longestWord = words[0];
-
-         //iterate
-         for(var i = 1; i<words.length; i++){
-             var current = words[i];
-
-             if(current.length > longestWord.length){
-                 longestWord = current
+         var word = str.split(" ")
+         var wordLongest = word[0];
+         for(var i =1; i<word.length; i++){
+             var current =  word[i];
+             if(current.length > wordLongest.length){
+                 wordLongest = current;
+                 //current = wordLongest;
              }
          }
-         return longestWord;
-
+         return wordLongest;
      }
-     console.log(longestWord(sms))
+     console.log(longestWord(sms));
     
     
     </script>
